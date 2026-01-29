@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Certificates — Sudarat</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap" media="print"
+        onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap" />
+    </noscript>
+    <link href="./css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet">
+    <link href="./css/bootstrap-icons/bootstrap-icons.css?ver=1.2.0" rel="stylesheet">
+    <link href="./css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
+    <link href="./css/aos.css?ver=1.2.0" rel="stylesheet">
+    <link href="./css/main.css?ver=1.2.0" rel="stylesheet">
+    <noscript>
+        <style type="text/css">
+            [data-aos] {
+                opacity: 1 !important;
+                transform: translate(0) scale(1) !important;
+            }
+        </style>
+    </noscript>
+</head>
+
+<body id="top">
+    <header class="bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="header-nav" role="navigation">
+            <div class="container">
+                <a class="link-dark navbar-brand site-title mb-0" href="index.html">SUDARAT W</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto me-2">
+                        <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#experience">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#education">Education</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="certificates.html">Certificates</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="page-content">
+        <div id="content">
+            <div class="section px-3 px-lg-4 pt-5 pb-5" id="certificates">
+
+                <div class="container-narrow">
+                    <div class="text-center mb-5">
+                        <h2 class="marker marker-center">Certificates</h2>
+                    </div>
+
+                    <div class="row g-4 bp-gallery" id="cert-gallery-list"></div>
+                    <script>
+                        (function () {
+                            var base = "images/certificates/";
+                            var certificates = [
+                                { delay: 100, src: "2026-01-22.jpg", caption: "2026-01-22" },
+                                { delay: 150, src: "2025-12-26.jpg", caption: "2025-12-26" },
+                                { delay: 200, src: "2025-07-09.jpg", caption: "2025-07-09" },
+                                { delay: 250, src: "2025-06-15.jpg", caption: "2025-06-15" },
+                                { delay: 300, src: "2025-06-14.jpg", caption: "2026-06-14" },
+                                { delay: 350, src: "2024-02-13.jpg", caption: "2024-02-13" },
+                                { delay: 400, src: "2024-02-06.jpg", caption: "2024-02-06" },
+                            ];
+                            var html = certificates.map(function (c, i) {
+                                var file = base + c.src;
+                                var alt = "Certificate " + (i + 1);
+                                return '<div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="' + c.delay + '">' +
+                                    '<figure class="portfolio-item mb-0 ratio ratio-4x3 bg-light rounded overflow-hidden shadow-sm">' +
+                                    '<img src="' + file + '" data-bp="' + file + '" alt="' + alt + '" class="object-fit-cover w-100 h-100">' +
+                                    '<figcaption class="small text-center py-2 text-muted bg-white">' + c.caption + '</figcaption>' +
+                                    '</figure></div>';
+                            }).join("");
+                            document.getElementById("cert-gallery-list").innerHTML = html;
+                        })();
+                    </script>
+                </div>
+            </div>
+            <footer class="pt-4 pb-4 text-center bg-light">
+                <div class="container">
+                    <div class="my-3">
+                        <div class="h4">Sudarat Worawetwichai</div>
+                        <p>Web Developer</p>
+                        <div class="social-nav">
+                            <nav role="navigation">
+                                <ul class="nav justify-content-center">
+                                    <li class="nav-item"><a class="nav-link" href="https://github.com/nummunoil"
+                                            title="GitHub"><i class="fab fa-github"></i><span
+                                                class="menu-title sr-only">GitHub</span></a></li>
+                                    <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/nummunoil"
+                                            title="Facebook"><i class="fab fa-facebook"></i><span
+                                                class="menu-title sr-only">Facebook</span></a></li>
+                                    <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/nummunoils"
+                                            title="Instagram"><i class="fab fa-instagram"></i><span
+                                                class="menu-title sr-only">Instagram</span></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="text-small text-secondary">
+                        <div class="mb-1">&copy; Super Folio. All rights reserved.</div>
+                        <div>Design - <span>TemplateFlip</span></div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <div id="scrolltop"><a class="btn btn-secondary" href="#top"><span class="icon"><i
+                    class="fas fa-angle-up fa-x"></i></span></a></div>
+
+    <script src="./scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
+    <script src="./scripts/BigPicture.min.js?ver=1.2.0"></script>
+    <script src="./scripts/aos.min.js?ver=1.2.0"></script>
+    <script src="./scripts/main.js?ver=1.2.0"></script>
+</body>
+
+</html>
