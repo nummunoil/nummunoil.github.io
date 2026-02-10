@@ -67,19 +67,23 @@
                         (function () {
                             var base = "images/certificates/";
                             var certificates = [
-                                { delay: 100, file: "2026-01-22" },
-                                { delay: 150, file: "2025-12-26" },
-                                { delay: 200, file: "2025-07-09" },
-                                { delay: 250, file: "2025-06-15" },
-                                { delay: 300, file: "2025-06-14" },
-                                { delay: 350, file: "2024-02-13" },
-                                { delay: 400, file: "2024-02-06" },
+                                { file: "2026-02-05" },
+                                { file: "2026-02-04" },
+                                { file: "2026-02-03" },
+                                { file: "2026-01-22" },
+                                { file: "2025-12-26" },
+                                { file: "2025-07-09" },
+                                { file: "2025-06-15" },
+                                { file: "2025-06-14" },
+                                { file: "2024-02-13" },
+                                { file: "2024-02-06" },
                             ];
                             var html = certificates.map(function (c, i) {
+                                var delay = 100 + i * 50;
                                 var file = base + c.file + ".jpg";
                                 var caption = c.file;
                                 var alt = "Certificate " + (i + 1);
-                                return '<div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="' + c.delay + '">' +
+                                return '<div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="' + delay + '">' +
                                     '<figure class="portfolio-item mb-0 ratio ratio-4x3 bg-light rounded overflow-hidden shadow-sm">' +
                                     '<img src="' + file + '" data-bp="' + file + '" alt="' + alt + '" class="object-fit-cover w-100 h-100">' +
                                     '<figcaption class="small text-center py-2 text-muted bg-white">' + caption + '</figcaption>' +
